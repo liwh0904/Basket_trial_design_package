@@ -9,13 +9,12 @@ SimonBayes.type1.search(
   n,
   n.ia,
   resp.true,
-  resp.cntl,
-  resp.trt,
   lambda,
   gamma,
   plo,
   phi,
-  T
+  T,
+  nsim
 )
 }
 \arguments{
@@ -25,11 +24,7 @@ SimonBayes.type1.search(
 
 \item{n.ia}{number of patients for interium analysis}
 
-\item{resp.true}{probability under the alternative}
-
-\item{resp.cntl}{probability under the null}
-
-\item{resp.trt}{probability under the alternative}
+\item{resp.true}{probability under the null}
 
 \item{lambda}{the prior probability of H0: that the strata are completely correlated}
 
@@ -40,6 +35,8 @@ SimonBayes.type1.search(
 \item{phi}{response probability for active drug}
 
 \item{T}{threshold for conclusive posterior probability}
+
+\item{nsim}{Number of simulations for each T}
 }
 \value{
 return typeI error under differen T

@@ -4,7 +4,18 @@
 \alias{SimonBayes.2stg}
 \title{main function decision making}
 \usage{
-SimonBayes.2stg(r.ia, r, lambda, gamma, plo, phi, T = 0.8, n.ia, k, n)
+SimonBayes.2stg(
+  r.ia = NULL,
+  r,
+  lambda,
+  gamma,
+  plo,
+  phi,
+  T = 0.8,
+  n.ia = NULL,
+  k,
+  n
+)
 }
 \arguments{
 \item{r.ia}{number of responses in interium analysis}

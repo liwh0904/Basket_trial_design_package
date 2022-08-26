@@ -4,20 +4,7 @@
 \alias{SimonBayes.type1}
 \title{Simulate data and run main function decision making}
 \usage{
-SimonBayes.type1(
-  rep,
-  k,
-  n,
-  n.ia,
-  resp.true,
-  resp.cntl,
-  resp.trt,
-  lambda,
-  gamma,
-  plo,
-  phi,
-  T
-)
+SimonBayes.type1(rep, k, n, n.ia = NULL, resp.true, lambda, gamma, plo, phi, T)
 }
 \arguments{
 \item{rep}{number of repetition}
@@ -29,10 +16,6 @@ SimonBayes.type1(
 \item{n.ia}{number of patients for interium analysis}
 
 \item{resp.true}{probability under the alternative}
-
-\item{resp.cntl}{probability under the null}
-
-\item{resp.trt}{probability under the alternative}
 
 \item{lambda}{the prior probability of H0: that the strata are completely correlated}
 
